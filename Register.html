@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Registration Form</title>
+		<style>
+			body {
+				font-family: Arial, sans-serif;
+				background-size: cover;
+				background-image: url(WhatsApp\ Image\ 2024-05-17\ at\ 22.13.18.jpeg);
+				margin: 0;
+				padding: 0;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				height: 100vh;
+				flex-direction: column;
+			}
+
+			.title h1{
+				color: black;
+				font-size: 50px;
+			}
+
+			.main {
+				background-color: #fff;
+				border-radius: 15px;
+				box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+				padding: 20px;
+				width: 600px;
+			}
+
+			.main h2 {
+				color: #4caf50;
+				margin-bottom: 20px;
+				width: 100%;
+				text-align: center;
+			}
+
+			label {
+				display: block;
+				margin-bottom: 5px;
+				color: #555;
+				font-weight: bold;
+			}
+
+			input[type="text"],
+			input[type="email"],
+			input[type="date"],
+			select {
+				width: 100%;
+				margin-bottom: 15px;
+				padding: 10px;
+				box-sizing: border-box;
+				border: 1px solid #ddd;
+				border-radius: 5px;
+			}
+
+			button[type="submit"] {
+				padding: 15px;
+				border-radius: 10px;
+				border: none;
+				background-color: #0e1e6a;
+				color: white;
+				cursor: pointer;
+				width: 100%;
+				font-size: 16px;
+				margin-top: 10px;
+			}
+
+			.column-container {
+				display: flex;
+				justify-content: space-between;
+			}
+
+			.column {
+				width: 48%;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="title">
+			<h1>Ghenriett Events</h1>
+			<h3>
+				<span style="font-size: 10px;"><i class="fa-solid fa-face-laugh-wink fa-xl"></i></span>
+				<span style="font-style: italic; color: rgb(29, 241, 29); font-size: 25px;letter-spacing: none;">A promise of glamour for your event!</span> 
+			</h3>
+			<!-- creating underline class inside the div title -->
+			<div class="underline"></div>
+		</div>
+
+		<div class="main">
+			<h2>Registration Form</h2>
+			<form action="">
+				<div class="column-container">
+					<div class="column">
+						<label for="first">First Name:</label>
+						<input type="text" id="first" name="first" required />
+
+						<label for="last">Contact:</label>
+						<input type="text" id="last" name="last" required />
+
+						<label for="gender">Gender:</label>
+						<select id="gender" name="gender" required>
+							<option value="male">Male</option>
+							<option value="female">Female</option>
+							<option value="other">Other</option>
+						</select>
+					</div>
+
+					<div class="column">
+						<label for="email">Last Name:</label>
+						<input type="email" id="email" name="email" required />
+
+						<label for="mobile">Email:</label>
+						<input type="text" id="mobile" name="mobile" maxlength="10" required />
+
+						<label for="booking">Booking:</label>
+						<select id="booking" name="booking" required>
+							<option value="wedding">Wedding</option>
+							<option value="birthday">Birthday</option>
+							<option value="conference">Conference</option>
+							<option value="burial">Burial</option>
+						</select>
+
+						<label for="date">Event Date:</label>
+						<input type="date" id="date" name="date" required />
+						
+					</div>
+				</div>
+
+				<button type="submit">Submit</button>
+			</form>
+		</div>
+	</body>
+</html>
+
+
